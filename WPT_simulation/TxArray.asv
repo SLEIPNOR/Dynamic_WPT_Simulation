@@ -1,0 +1,33 @@
+% TxArray tracking system
+function [d, Rx_loc] = TxArray(tdiff,Rx_loc,Tx_loc)
+    
+    
+%     dim = 11;
+%     Txarr = zeros(dim,dim,2);
+%     for i = 1:dim
+%         for j = 1:dim
+%     
+%             Txarr(i,j,:) = [i,j] ;
+%     
+%         end
+%     end
+    
+    
+    v = 1e-2;
+    
+    
+    
+    dir_mat = [[-1,-1]; [-1,0]; [0,-1]; [1,1] ;
+    [1,0]; [0,1]; [1,-1]; [-1,1]];
+    
+    dir = dir_mat(randi([1 8]),:);
+    
+    Rx_loc = Rx_loc + dir*v*tdiff;
+        
+       
+    
+    d = norm(Rx_loc - Tx_loc);
+   
+end
+
+
