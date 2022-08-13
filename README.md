@@ -4,5 +4,5 @@
 (2) Run TxArray  
 (3) Observe the result in scope  
 (4) Sampling time of both TxArray and Raspi are essential elements in sumulation  
-(6) All code are servicing for thr simulation blocks
+(6) All code are servicing for thr simulation blocks  
 (7) Raspi_2layer and TxArray_2layer files are used for 8 layers Tx array system
